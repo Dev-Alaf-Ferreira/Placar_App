@@ -42,6 +42,9 @@
             lblNomeTimaA = new Label();
             lblNomeTimaB = new Label();
             cronometro = new System.Windows.Forms.Timer(components);
+            lbl1Tempo = new Label();
+            btnComecar = new Button();
+            btnPausar = new Button();
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).BeginInit();
             SuspendLayout();
@@ -67,10 +70,10 @@
             // lblCronometro
             // 
             lblCronometro.AutoSize = true;
-            lblCronometro.Font = new Font("Segoe UI", 26F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCronometro.Location = new Point(275, 139);
+            lblCronometro.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCronometro.Location = new Point(250, 128);
             lblCronometro.Name = "lblCronometro";
-            lblCronometro.Size = new Size(104, 47);
+            lblCronometro.Size = new Size(142, 65);
             lblCronometro.TabIndex = 2;
             lblCronometro.Text = "00:00";
             // 
@@ -160,15 +163,49 @@
             // 
             // cronometro
             // 
-            cronometro.Enabled = true;
             cronometro.Interval = 1000;
             cronometro.Tick += cronometro_Tick;
+            // 
+            // lbl1Tempo
+            // 
+            lbl1Tempo.AutoSize = true;
+            lbl1Tempo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl1Tempo.Location = new Point(285, 193);
+            lbl1Tempo.Name = "lbl1Tempo";
+            lbl1Tempo.Size = new Size(67, 19);
+            lbl1Tempo.TabIndex = 12;
+            lbl1Tempo.Text = "1 TEMPO";
+            // 
+            // btnComecar
+            // 
+            btnComecar.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnComecar.Location = new Point(250, 249);
+            btnComecar.Name = "btnComecar";
+            btnComecar.Size = new Size(142, 35);
+            btnComecar.TabIndex = 13;
+            btnComecar.Text = "Começar Jogo";
+            btnComecar.UseVisualStyleBackColor = true;
+            btnComecar.Click += btnComecar_Click;
+            // 
+            // btnPausar
+            // 
+            btnPausar.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnPausar.Location = new Point(250, 297);
+            btnPausar.Name = "btnPausar";
+            btnPausar.Size = new Size(142, 35);
+            btnPausar.TabIndex = 14;
+            btnPausar.Text = "Pausar Jogo";
+            btnPausar.UseVisualStyleBackColor = true;
+            btnPausar.Click += btnPausar_Click;
             // 
             // Main_menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(634, 461);
+            Controls.Add(btnPausar);
+            Controls.Add(btnComecar);
+            Controls.Add(lbl1Tempo);
             Controls.Add(lblNomeTimaB);
             Controls.Add(lblNomeTimaA);
             Controls.Add(lblTimeB);
@@ -204,5 +241,8 @@
         private Label lblNomeTimaA;
         private Label lblNomeTimaB;
         private System.Windows.Forms.Timer cronometro;
+        private Label lbl1Tempo;
+        private Button btnComecar;
+        private Button btnPausar;
     }
 }

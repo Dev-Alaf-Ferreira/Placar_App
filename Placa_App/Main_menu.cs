@@ -61,6 +61,12 @@ namespace Placa_App
         int min = 0; int seg = 0;
         private void cronometro_Tick(object sender, EventArgs e)
         {
+            seg++;
+            if (seg == 60)
+            {
+                min++;
+                seg = 0;
+            }
             string texto = "";
             if (min < 10)
                 texto += "0" + min;
@@ -72,12 +78,18 @@ namespace Placa_App
             else
                 texto += ":" + seg;
             lblCronometro.Text = texto;
-            seg++;
-            if (seg == 60)
-            {
-                min++;
-                seg = 0;
-            }
+            if (min == 10 && seg == 0)
+                cronometro.Enabled = false;
+        }
+
+        private void btnComecar_Click(object sender, EventArgs e)
+        {
+            cronometro.Enabled = true;
+        }
+
+        private void btnPausar_Click(object sender, EventArgs e)
+        {
+            cronometro.Stop();
         }
     }
 }
