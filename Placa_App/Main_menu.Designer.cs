@@ -42,7 +42,7 @@
             lblNomeTimaA = new Label();
             lblNomeTimaB = new Label();
             cronometro = new System.Windows.Forms.Timer(components);
-            lbl1Tempo = new Label();
+            lblTempo = new Label();
             btnComecar = new Button();
             btnPausar = new Button();
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).BeginInit();
@@ -166,15 +166,15 @@
             cronometro.Interval = 1000;
             cronometro.Tick += cronometro_Tick;
             // 
-            // lbl1Tempo
+            // lblTempo
             // 
-            lbl1Tempo.AutoSize = true;
-            lbl1Tempo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl1Tempo.Location = new Point(285, 193);
-            lbl1Tempo.Name = "lbl1Tempo";
-            lbl1Tempo.Size = new Size(67, 19);
-            lbl1Tempo.TabIndex = 12;
-            lbl1Tempo.Text = "1 TEMPO";
+            lblTempo.AutoSize = true;
+            lblTempo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTempo.Location = new Point(285, 193);
+            lblTempo.Name = "lblTempo";
+            lblTempo.Size = new Size(67, 19);
+            lblTempo.TabIndex = 12;
+            lblTempo.Text = "1 TEMPO";
             // 
             // btnComecar
             // 
@@ -205,7 +205,7 @@
             ClientSize = new Size(634, 461);
             Controls.Add(btnPausar);
             Controls.Add(btnComecar);
-            Controls.Add(lbl1Tempo);
+            Controls.Add(lblTempo);
             Controls.Add(lblNomeTimaB);
             Controls.Add(lblNomeTimaA);
             Controls.Add(lblTimeB);
@@ -241,7 +241,7 @@
         private Label lblNomeTimaA;
         private Label lblNomeTimaB;
         private System.Windows.Forms.Timer cronometro;
-        private Label lbl1Tempo;
+        private Label lblTempo;
         private Button btnComecar;
         private Button btnPausar;
     }
