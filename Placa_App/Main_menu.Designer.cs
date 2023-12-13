@@ -44,7 +44,6 @@
             cronometro = new System.Windows.Forms.Timer(components);
             lblTempo = new Label();
             btnComecar = new Button();
-            btnPausar = new Button();
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).BeginInit();
             SuspendLayout();
@@ -181,29 +180,17 @@
             btnComecar.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnComecar.Location = new Point(250, 249);
             btnComecar.Name = "btnComecar";
-            btnComecar.Size = new Size(142, 35);
+            btnComecar.Size = new Size(142, 44);
             btnComecar.TabIndex = 13;
             btnComecar.Text = "Começar Jogo";
             btnComecar.UseVisualStyleBackColor = true;
             btnComecar.Click += btnComecar_Click;
-            // 
-            // btnPausar
-            // 
-            btnPausar.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            btnPausar.Location = new Point(250, 297);
-            btnPausar.Name = "btnPausar";
-            btnPausar.Size = new Size(142, 35);
-            btnPausar.TabIndex = 14;
-            btnPausar.Text = "Pausar Jogo";
-            btnPausar.UseVisualStyleBackColor = true;
-            btnPausar.Click += btnPausar_Click;
             // 
             // Main_menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(634, 461);
-            Controls.Add(btnPausar);
             Controls.Add(btnComecar);
             Controls.Add(lblTempo);
             Controls.Add(lblNomeTimaB);
@@ -243,6 +230,5 @@
         private System.Windows.Forms.Timer cronometro;
         private Label lblTempo;
         private Button btnComecar;
-        private Button btnPausar;
     }
 }
