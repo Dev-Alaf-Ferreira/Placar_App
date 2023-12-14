@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="C2_FC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\C2_FC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ComandoControle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ComandoControle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Grupo_de_Apoio_FC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Grupo_de_Apoio_FC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Grupo_de_Apoio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grupo_de_Apoio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Licitacoes_FC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Licitacoes_FC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Licitacoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Licitacoes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rancho_FC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rancho_FC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rancho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rancho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sergenteacao_FC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sergenteacao_FC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sergenteacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sergenteacao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sub_Tenencia_FC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sub-Tenencia_FC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sub_Tenencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sub-Tenencia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

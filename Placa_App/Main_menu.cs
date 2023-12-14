@@ -11,18 +11,18 @@ namespace Placa_App
 
         private void CarregarImagem(PictureBox pcbTime, string text)
         {
-            if (text.Equals("C2_FC"))
-                pcbTime.Image = Properties.Resources.C2_FC;
-            else if (text.Equals("Grupo_de_Apoio_FC"))
-                pcbTime.Image = Properties.Resources.Grupo_de_Apoio_FC;
-            else if (text.Equals("Licitacoes_FC"))
-                pcbTime.Image = Properties.Resources.Licitacoes_FC;
-            else if (text.Equals("Rancho_FC"))
-                pcbTime.Image = Properties.Resources.Rancho_FC;
-            else if (text.Equals("Sergenteacao_FC"))
-                pcbTime.Image = Properties.Resources.Sergenteacao_FC;
-            else if (text.Equals("Sub_Tenencia_FC"))
-                pcbTime.Image = Properties.Resources.Sub_Tenencia_FC;
+            if (text.Equals("Comando e Controle"))
+                pcbTime.Image = Properties.Resources.ComandoControle;
+            else if (text.Equals("Grupo de Apoio"))
+                pcbTime.Image = Properties.Resources.Grupo_de_Apoio;
+            else if (text.Equals("Licitacões"))
+                pcbTime.Image = Properties.Resources.Licitacoes;
+            else if (text.Equals("Rancho"))
+                pcbTime.Image = Properties.Resources.Rancho;
+            else if (text.Equals("Sergenteacão_FC"))
+                pcbTime.Image = Properties.Resources.Sergenteacao;
+            else if (text.Equals("Sub_Tenência"))
+                pcbTime.Image = Properties.Resources.Sub_Tenencia;
 
         }
 
@@ -88,11 +88,12 @@ namespace Placa_App
             {
                 cronometro.Enabled = false;
                 btnComecar.Visible = true;
+                DesativarBotoes();
 
                 if (min == 10)
-                    btnComecar.Text = "Começar 2ª parte";
+                    btnComecar.Text = "Começar 2º Tempo";
                 else if (min == 20)
-                    btnComecar.Text = "Gravar e recomeçar";
+                    btnComecar.Text = "Recomeçar o Jogo";
             }
         }
 
@@ -104,9 +105,31 @@ namespace Placa_App
                 seg = 0;
                 lblCronometro.Text = "00:00";
                 btnComecar.Text = "Começar jogo";
+                lblTimeA.Text = "0";
+                lblTimeB.Text = "0";
+                lblTempo.Text = "1º Tempo";
             }
-            cronometro.Enabled = true;
-            btnComecar.Visible = false;
+            else
+            {
+                cronometro.Enabled = true;
+                btnComecar.Visible = false;
+                AtivarBotoes();
+            }
+        }
+
+        private void AtivarBotoes()
+        {
+            btnGolTimeA.Enabled = true;
+            btnGolTimeB.Enabled = true;
+            btnAnuladoTimeA.Enabled = true;
+            btnAnuladoTimeB.Enabled = true;
+        }
+        private void DesativarBotoes()
+        {
+            btnGolTimeA.Enabled = false;
+            btnGolTimeB.Enabled = false;
+            btnAnuladoTimeA.Enabled = false;
+            btnAnuladoTimeB.Enabled = false;
         }
 
         private void btnPausar_Click(object sender, EventArgs e)

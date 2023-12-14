@@ -63,9 +63,9 @@ namespace Placa_App.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap C2_FC {
+        internal static System.Drawing.Bitmap ComandoControle {
             get {
-                object obj = ResourceManager.GetObject("C2_FC", resourceCulture);
+                object obj = ResourceManager.GetObject("ComandoControle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Placa_App.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Grupo_de_Apoio_FC {
+        internal static System.Drawing.Bitmap Grupo_de_Apoio {
             get {
-                object obj = ResourceManager.GetObject("Grupo_de_Apoio_FC", resourceCulture);
+                object obj = ResourceManager.GetObject("Grupo_de_Apoio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Placa_App.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Licitacoes_FC {
+        internal static System.Drawing.Bitmap Licitacoes {
             get {
-                object obj = ResourceManager.GetObject("Licitacoes_FC", resourceCulture);
+                object obj = ResourceManager.GetObject("Licitacoes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Placa_App.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rancho_FC {
+        internal static System.Drawing.Bitmap Rancho {
             get {
-                object obj = ResourceManager.GetObject("Rancho_FC", resourceCulture);
+                object obj = ResourceManager.GetObject("Rancho", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace Placa_App.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sergenteacao_FC {
+        internal static System.Drawing.Bitmap Sergenteacao {
             get {
-                object obj = ResourceManager.GetObject("Sergenteacao_FC", resourceCulture);
+                object obj = ResourceManager.GetObject("Sergenteacao", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace Placa_App.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sub_Tenencia_FC {
+        internal static System.Drawing.Bitmap Sub_Tenencia {
             get {
-                object obj = ResourceManager.GetObject("Sub_Tenencia_FC", resourceCulture);
+                object obj = ResourceManager.GetObject("Sub_Tenencia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

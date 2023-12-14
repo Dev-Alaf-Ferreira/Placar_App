@@ -78,6 +78,7 @@
             // 
             // btnGolTimeA
             // 
+            btnGolTimeA.Enabled = false;
             btnGolTimeA.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnGolTimeA.Location = new Point(12, 358);
             btnGolTimeA.Name = "btnGolTimeA";
@@ -89,6 +90,7 @@
             // 
             // btnAnuladoTimeA
             // 
+            btnAnuladoTimeA.Enabled = false;
             btnAnuladoTimeA.Location = new Point(137, 358);
             btnAnuladoTimeA.Name = "btnAnuladoTimeA";
             btnAnuladoTimeA.Size = new Size(75, 35);
@@ -99,6 +101,7 @@
             // 
             // btnGolTimeB
             // 
+            btnGolTimeB.Enabled = false;
             btnGolTimeB.Location = new Point(422, 359);
             btnGolTimeB.Name = "btnGolTimeB";
             btnGolTimeB.Size = new Size(75, 35);
@@ -109,6 +112,7 @@
             // 
             // btnAnuladoTimeB
             // 
+            btnAnuladoTimeB.Enabled = false;
             btnAnuladoTimeB.Location = new Point(547, 359);
             btnAnuladoTimeB.Name = "btnAnuladoTimeB";
             btnAnuladoTimeB.Size = new Size(75, 35);
@@ -141,23 +145,23 @@
             // 
             lblNomeTimaA.AutoSize = true;
             lblNomeTimaA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNomeTimaA.Location = new Point(80, 263);
+            lblNomeTimaA.Location = new Point(36, 265);
             lblNomeTimaA.Name = "lblNomeTimaA";
-            lblNomeTimaA.Size = new Size(54, 21);
+            lblNomeTimaA.Size = new Size(154, 21);
             lblNomeTimaA.TabIndex = 9;
-            lblNomeTimaA.Text = "C2_FC";
+            lblNomeTimaA.Text = "Comando e Controle";
             lblNomeTimaA.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblNomeTimaB
             // 
             lblNomeTimaB.AutoSize = true;
             lblNomeTimaB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNomeTimaB.Location = new Point(449, 263);
+            lblNomeTimaB.Location = new Point(469, 265);
             lblNomeTimaB.Name = "lblNomeTimaB";
             lblNomeTimaB.RightToLeft = RightToLeft.No;
-            lblNomeTimaB.Size = new Size(151, 21);
+            lblNomeTimaB.Size = new Size(120, 21);
             lblNomeTimaB.TabIndex = 10;
-            lblNomeTimaB.Text = "Grupo_de_Apoio_FC";
+            lblNomeTimaB.Text = "Grupo de Apoio";
             lblNomeTimaB.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // cronometro
@@ -180,7 +184,7 @@
             btnComecar.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnComecar.Location = new Point(250, 249);
             btnComecar.Name = "btnComecar";
-            btnComecar.Size = new Size(142, 44);
+            btnComecar.Size = new Size(142, 54);
             btnComecar.TabIndex = 13;
             btnComecar.Text = "Começar Jogo";
             btnComecar.UseVisualStyleBackColor = true;
