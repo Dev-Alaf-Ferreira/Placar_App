@@ -47,11 +47,12 @@
             panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // pcbTimeB
             // 
-            pcbTimeB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pcbTimeB.Anchor = AnchorStyles.None;
             pcbTimeB.Location = new Point(422, 81);
             pcbTimeB.Name = "pcbTimeB";
             pcbTimeB.Size = new Size(200, 150);
@@ -61,7 +62,7 @@
             // 
             // pcbTimeA
             // 
-            pcbTimeA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pcbTimeA.Anchor = AnchorStyles.None;
             pcbTimeA.Location = new Point(12, 81);
             pcbTimeA.Name = "pcbTimeA";
             pcbTimeA.Size = new Size(200, 150);
@@ -71,7 +72,7 @@
             // 
             // lblCronometro
             // 
-            lblCronometro.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblCronometro.Anchor = AnchorStyles.None;
             lblCronometro.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
             lblCronometro.Location = new Point(250, 128);
             lblCronometro.Name = "lblCronometro";
@@ -81,10 +82,10 @@
             // 
             // btnGolTimeA
             // 
-            btnGolTimeA.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnGolTimeA.Anchor = AnchorStyles.None;
             btnGolTimeA.Enabled = false;
             btnGolTimeA.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            btnGolTimeA.Location = new Point(12, 358);
+            btnGolTimeA.Location = new Point(12, 367);
             btnGolTimeA.Name = "btnGolTimeA";
             btnGolTimeA.Size = new Size(75, 35);
             btnGolTimeA.TabIndex = 3;
@@ -94,9 +95,9 @@
             // 
             // btnAnuladoTimeA
             // 
-            btnAnuladoTimeA.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnAnuladoTimeA.Anchor = AnchorStyles.None;
             btnAnuladoTimeA.Enabled = false;
-            btnAnuladoTimeA.Location = new Point(137, 358);
+            btnAnuladoTimeA.Location = new Point(137, 367);
             btnAnuladoTimeA.Name = "btnAnuladoTimeA";
             btnAnuladoTimeA.Size = new Size(75, 35);
             btnAnuladoTimeA.TabIndex = 4;
@@ -106,9 +107,9 @@
             // 
             // btnGolTimeB
             // 
-            btnGolTimeB.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnGolTimeB.Anchor = AnchorStyles.None;
             btnGolTimeB.Enabled = false;
-            btnGolTimeB.Location = new Point(422, 359);
+            btnGolTimeB.Location = new Point(422, 368);
             btnGolTimeB.Name = "btnGolTimeB";
             btnGolTimeB.Size = new Size(75, 35);
             btnGolTimeB.TabIndex = 5;
@@ -118,9 +119,9 @@
             // 
             // btnAnuladoTimeB
             // 
-            btnAnuladoTimeB.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnAnuladoTimeB.Anchor = AnchorStyles.None;
             btnAnuladoTimeB.Enabled = false;
-            btnAnuladoTimeB.Location = new Point(547, 359);
+            btnAnuladoTimeB.Location = new Point(547, 368);
             btnAnuladoTimeB.Name = "btnAnuladoTimeB";
             btnAnuladoTimeB.Size = new Size(75, 35);
             btnAnuladoTimeB.TabIndex = 6;
@@ -130,9 +131,9 @@
             // 
             // lblTimeA
             // 
-            lblTimeA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblTimeA.Anchor = AnchorStyles.Bottom;
             lblTimeA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTimeA.Location = new Point(100, 311);
+            lblTimeA.Location = new Point(104, 321);
             lblTimeA.Name = "lblTimeA";
             lblTimeA.Size = new Size(19, 21);
             lblTimeA.TabIndex = 7;
@@ -140,9 +141,9 @@
             // 
             // lblTimeB
             // 
-            lblTimeB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblTimeB.Anchor = AnchorStyles.Bottom;
             lblTimeB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTimeB.Location = new Point(518, 311);
+            lblTimeB.Location = new Point(518, 321);
             lblTimeB.Name = "lblTimeB";
             lblTimeB.Size = new Size(19, 21);
             lblTimeB.TabIndex = 8;
@@ -150,7 +151,7 @@
             // 
             // lblNomeTimaA
             // 
-            lblNomeTimaA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblNomeTimaA.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             lblNomeTimaA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNomeTimaA.Location = new Point(36, 265);
             lblNomeTimaA.Name = "lblNomeTimaA";
@@ -161,7 +162,7 @@
             // 
             // lblNomeTimaB
             // 
-            lblNomeTimaB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblNomeTimaB.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             lblNomeTimaB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNomeTimaB.Location = new Point(469, 265);
             lblNomeTimaB.Name = "lblNomeTimaB";
@@ -178,7 +179,7 @@
             // 
             // lblTempo
             // 
-            lblTempo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblTempo.Anchor = AnchorStyles.None;
             lblTempo.AutoSize = true;
             lblTempo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblTempo.Location = new Point(285, 193);
@@ -189,7 +190,7 @@
             // 
             // btnComecar
             // 
-            btnComecar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnComecar.Anchor = AnchorStyles.None;
             btnComecar.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnComecar.Location = new Point(250, 249);
             btnComecar.Name = "btnComecar";
@@ -203,6 +204,8 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoScroll = true;
+            panel1.Controls.Add(lblTimeA);
+            panel1.Controls.Add(lblTimeB);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(634, 461);
@@ -217,8 +220,6 @@
             Controls.Add(lblTempo);
             Controls.Add(lblNomeTimaB);
             Controls.Add(lblNomeTimaA);
-            Controls.Add(lblTimeB);
-            Controls.Add(lblTimeA);
             Controls.Add(btnAnuladoTimeB);
             Controls.Add(btnGolTimeB);
             Controls.Add(btnAnuladoTimeA);
@@ -234,6 +235,7 @@
             Text = "Campeonato 17º Pelotão de Comunicações de Selva";
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
