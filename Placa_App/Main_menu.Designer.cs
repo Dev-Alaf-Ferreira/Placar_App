@@ -44,12 +44,14 @@
             cronometro = new System.Windows.Forms.Timer(components);
             lblTempo = new Label();
             btnComecar = new Button();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).BeginInit();
             SuspendLayout();
             // 
             // pcbTimeB
             // 
+            pcbTimeB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pcbTimeB.Location = new Point(422, 81);
             pcbTimeB.Name = "pcbTimeB";
             pcbTimeB.Size = new Size(200, 150);
@@ -59,6 +61,7 @@
             // 
             // pcbTimeA
             // 
+            pcbTimeA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pcbTimeA.Location = new Point(12, 81);
             pcbTimeA.Name = "pcbTimeA";
             pcbTimeA.Size = new Size(200, 150);
@@ -68,7 +71,7 @@
             // 
             // lblCronometro
             // 
-            lblCronometro.AutoSize = true;
+            lblCronometro.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblCronometro.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
             lblCronometro.Location = new Point(250, 128);
             lblCronometro.Name = "lblCronometro";
@@ -78,6 +81,7 @@
             // 
             // btnGolTimeA
             // 
+            btnGolTimeA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnGolTimeA.Enabled = false;
             btnGolTimeA.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnGolTimeA.Location = new Point(12, 358);
@@ -90,6 +94,7 @@
             // 
             // btnAnuladoTimeA
             // 
+            btnAnuladoTimeA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnAnuladoTimeA.Enabled = false;
             btnAnuladoTimeA.Location = new Point(137, 358);
             btnAnuladoTimeA.Name = "btnAnuladoTimeA";
@@ -101,6 +106,7 @@
             // 
             // btnGolTimeB
             // 
+            btnGolTimeB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnGolTimeB.Enabled = false;
             btnGolTimeB.Location = new Point(422, 359);
             btnGolTimeB.Name = "btnGolTimeB";
@@ -112,6 +118,7 @@
             // 
             // btnAnuladoTimeB
             // 
+            btnAnuladoTimeB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnAnuladoTimeB.Enabled = false;
             btnAnuladoTimeB.Location = new Point(547, 359);
             btnAnuladoTimeB.Name = "btnAnuladoTimeB";
@@ -123,7 +130,7 @@
             // 
             // lblTimeA
             // 
-            lblTimeA.AutoSize = true;
+            lblTimeA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblTimeA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblTimeA.Location = new Point(100, 311);
             lblTimeA.Name = "lblTimeA";
@@ -133,7 +140,7 @@
             // 
             // lblTimeB
             // 
-            lblTimeB.AutoSize = true;
+            lblTimeB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblTimeB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblTimeB.Location = new Point(518, 311);
             lblTimeB.Name = "lblTimeB";
@@ -143,7 +150,7 @@
             // 
             // lblNomeTimaA
             // 
-            lblNomeTimaA.AutoSize = true;
+            lblNomeTimaA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblNomeTimaA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNomeTimaA.Location = new Point(36, 265);
             lblNomeTimaA.Name = "lblNomeTimaA";
@@ -154,7 +161,7 @@
             // 
             // lblNomeTimaB
             // 
-            lblNomeTimaB.AutoSize = true;
+            lblNomeTimaB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblNomeTimaB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNomeTimaB.Location = new Point(469, 265);
             lblNomeTimaB.Name = "lblNomeTimaB";
@@ -171,6 +178,7 @@
             // 
             // lblTempo
             // 
+            lblTempo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblTempo.AutoSize = true;
             lblTempo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblTempo.Location = new Point(285, 193);
@@ -181,6 +189,7 @@
             // 
             // btnComecar
             // 
+            btnComecar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnComecar.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnComecar.Location = new Point(250, 249);
             btnComecar.Name = "btnComecar";
@@ -189,6 +198,15 @@
             btnComecar.Text = "Começar Jogo";
             btnComecar.UseVisualStyleBackColor = true;
             btnComecar.Click += btnComecar_Click;
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.AutoScroll = true;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(634, 461);
+            panel1.TabIndex = 14;
             // 
             // Main_menu
             // 
@@ -208,6 +226,7 @@
             Controls.Add(lblCronometro);
             Controls.Add(pcbTimeA);
             Controls.Add(pcbTimeB);
+            Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Main_menu";
             StartPosition = FormStartPosition.CenterScreen;
@@ -234,5 +253,6 @@
         private System.Windows.Forms.Timer cronometro;
         private Label lblTempo;
         private Button btnComecar;
+        private Panel panel1;
     }
 }
