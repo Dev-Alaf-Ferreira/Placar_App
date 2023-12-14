@@ -45,9 +45,11 @@
             lblTempo = new Label();
             btnComecar = new Button();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pcbTimeB
@@ -84,6 +86,7 @@
             // 
             btnGolTimeA.Anchor = AnchorStyles.None;
             btnGolTimeA.Enabled = false;
+            btnGolTimeA.FlatStyle = FlatStyle.Flat;
             btnGolTimeA.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnGolTimeA.Location = new Point(12, 367);
             btnGolTimeA.Name = "btnGolTimeA";
@@ -97,6 +100,7 @@
             // 
             btnAnuladoTimeA.Anchor = AnchorStyles.None;
             btnAnuladoTimeA.Enabled = false;
+            btnAnuladoTimeA.FlatStyle = FlatStyle.Flat;
             btnAnuladoTimeA.Location = new Point(137, 367);
             btnAnuladoTimeA.Name = "btnAnuladoTimeA";
             btnAnuladoTimeA.Size = new Size(75, 35);
@@ -109,6 +113,7 @@
             // 
             btnGolTimeB.Anchor = AnchorStyles.None;
             btnGolTimeB.Enabled = false;
+            btnGolTimeB.FlatStyle = FlatStyle.Flat;
             btnGolTimeB.Location = new Point(422, 368);
             btnGolTimeB.Name = "btnGolTimeB";
             btnGolTimeB.Size = new Size(75, 35);
@@ -121,6 +126,7 @@
             // 
             btnAnuladoTimeB.Anchor = AnchorStyles.None;
             btnAnuladoTimeB.Enabled = false;
+            btnAnuladoTimeB.FlatStyle = FlatStyle.Flat;
             btnAnuladoTimeB.Location = new Point(547, 368);
             btnAnuladoTimeB.Name = "btnAnuladoTimeB";
             btnAnuladoTimeB.Size = new Size(75, 35);
@@ -191,6 +197,7 @@
             // btnComecar
             // 
             btnComecar.Anchor = AnchorStyles.None;
+            btnComecar.FlatStyle = FlatStyle.Flat;
             btnComecar.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnComecar.Location = new Point(250, 249);
             btnComecar.Name = "btnComecar";
@@ -204,6 +211,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoScroll = true;
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(lblTimeA);
             panel1.Controls.Add(lblTimeB);
             panel1.Location = new Point(0, 0);
@@ -211,10 +219,22 @@
             panel1.Size = new Size(634, 461);
             panel1.TabIndex = 14;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(634, 461);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
             // Main_menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(634, 461);
             Controls.Add(btnComecar);
             Controls.Add(lblTempo);
@@ -231,11 +251,13 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(650, 500);
             Name = "Main_menu";
+            Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Campeonato 17º Pelotão de Comunicações de Selva";
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).EndInit();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -257,5 +279,6 @@
         private Label lblTempo;
         private Button btnComecar;
         private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }
