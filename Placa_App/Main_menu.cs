@@ -58,7 +58,7 @@ namespace Placa_App
             }
 
         }
-        int min = 19; int seg = 55;
+        int min = 0; int seg = 0;
         private void cronometro_Tick(object sender, EventArgs e)
         {
             seg++;
@@ -68,38 +68,38 @@ namespace Placa_App
                 seg = 0;
             }
             string texto = "";
-            if (min < 10)
+            if (min < 8)
                 texto += "0" + min;
             else
                 texto += min;
 
-            if (seg < 10)
+            if (seg < 8)
                 texto += ":0" + seg;
             else
                 texto += ":" + seg;
             lblCronometro.Text = texto;
-            if (min < 10)
+            if (min < 8)
                 lblTempo.Text = "1º Tempo";
             else
                 lblTempo.Text = "2º Tempo";
 
 
-            if ((min == 10 && seg == 0) || (min == 20))
+            if ((min == 8 && seg == 0) || (min == 16))
             {
                 cronometro.Enabled = false;
                 btnComecar.Visible = true;
                 DesativarBotoes();
 
-                if (min == 10)
+                if (min == 8)
                     btnComecar.Text = "Começar 2º Tempo";
-                else if (min == 20)
+                else if (min == 16)
                     btnComecar.Text = "Recomeçar o Jogo";
             }
         }
 
         private void btnComecar_Click(object sender, EventArgs e)
         {
-            if (min == 20)
+            if (min == 16)
             {
                 min = 0;
                 seg = 0;
