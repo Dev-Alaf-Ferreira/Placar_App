@@ -81,7 +81,7 @@
             // 
             // btnGolTimeA
             // 
-            btnGolTimeA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnGolTimeA.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnGolTimeA.Enabled = false;
             btnGolTimeA.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnGolTimeA.Location = new Point(12, 358);
@@ -94,7 +94,7 @@
             // 
             // btnAnuladoTimeA
             // 
-            btnAnuladoTimeA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnAnuladoTimeA.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnAnuladoTimeA.Enabled = false;
             btnAnuladoTimeA.Location = new Point(137, 358);
             btnAnuladoTimeA.Name = "btnAnuladoTimeA";
@@ -106,7 +106,7 @@
             // 
             // btnGolTimeB
             // 
-            btnGolTimeB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnGolTimeB.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnGolTimeB.Enabled = false;
             btnGolTimeB.Location = new Point(422, 359);
             btnGolTimeB.Name = "btnGolTimeB";
@@ -118,7 +118,7 @@
             // 
             // btnAnuladoTimeB
             // 
-            btnAnuladoTimeB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnAnuladoTimeB.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnAnuladoTimeB.Enabled = false;
             btnAnuladoTimeB.Location = new Point(547, 359);
             btnAnuladoTimeB.Name = "btnAnuladoTimeB";
@@ -228,6 +228,7 @@
             Controls.Add(pcbTimeB);
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(650, 500);
             Name = "Main_menu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Campeonato 17º Pelotão de Comunicações de Selva";
