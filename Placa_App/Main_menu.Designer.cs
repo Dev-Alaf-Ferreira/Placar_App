@@ -75,7 +75,9 @@
             // lblCronometro
             // 
             lblCronometro.Anchor = AnchorStyles.None;
+            lblCronometro.BackColor = Color.Transparent;
             lblCronometro.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCronometro.ForeColor = SystemColors.ActiveCaptionText;
             lblCronometro.Location = new Point(250, 128);
             lblCronometro.Name = "lblCronometro";
             lblCronometro.Size = new Size(142, 65);
@@ -85,70 +87,84 @@
             // btnGolTimeA
             // 
             btnGolTimeA.Anchor = AnchorStyles.None;
+            btnGolTimeA.BackColor = Color.Transparent;
             btnGolTimeA.Enabled = false;
             btnGolTimeA.FlatStyle = FlatStyle.Flat;
             btnGolTimeA.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnGolTimeA.ForeColor = SystemColors.ActiveCaptionText;
             btnGolTimeA.Location = new Point(12, 367);
             btnGolTimeA.Name = "btnGolTimeA";
             btnGolTimeA.Size = new Size(75, 35);
             btnGolTimeA.TabIndex = 3;
             btnGolTimeA.Text = "GOL";
-            btnGolTimeA.UseVisualStyleBackColor = true;
+            btnGolTimeA.UseVisualStyleBackColor = false;
             btnGolTimeA.Click += btnGolTimeA_Click;
             // 
             // btnAnuladoTimeA
             // 
             btnAnuladoTimeA.Anchor = AnchorStyles.None;
+            btnAnuladoTimeA.BackColor = Color.Transparent;
             btnAnuladoTimeA.Enabled = false;
             btnAnuladoTimeA.FlatStyle = FlatStyle.Flat;
+            btnAnuladoTimeA.ForeColor = SystemColors.ActiveCaptionText;
             btnAnuladoTimeA.Location = new Point(137, 367);
             btnAnuladoTimeA.Name = "btnAnuladoTimeA";
             btnAnuladoTimeA.Size = new Size(75, 35);
             btnAnuladoTimeA.TabIndex = 4;
             btnAnuladoTimeA.Text = "ANULADO";
-            btnAnuladoTimeA.UseVisualStyleBackColor = true;
+            btnAnuladoTimeA.UseVisualStyleBackColor = false;
             btnAnuladoTimeA.Click += btnAnuladoTimeA_Click;
             // 
             // btnGolTimeB
             // 
             btnGolTimeB.Anchor = AnchorStyles.None;
+            btnGolTimeB.BackColor = Color.Transparent;
             btnGolTimeB.Enabled = false;
             btnGolTimeB.FlatStyle = FlatStyle.Flat;
+            btnGolTimeB.ForeColor = SystemColors.ActiveCaptionText;
             btnGolTimeB.Location = new Point(422, 368);
             btnGolTimeB.Name = "btnGolTimeB";
             btnGolTimeB.Size = new Size(75, 35);
             btnGolTimeB.TabIndex = 5;
             btnGolTimeB.Text = "GOL";
-            btnGolTimeB.UseVisualStyleBackColor = true;
+            btnGolTimeB.UseVisualStyleBackColor = false;
             btnGolTimeB.Click += btnGolTimeB_Click;
             // 
             // btnAnuladoTimeB
             // 
             btnAnuladoTimeB.Anchor = AnchorStyles.None;
+            btnAnuladoTimeB.BackColor = Color.Transparent;
             btnAnuladoTimeB.Enabled = false;
             btnAnuladoTimeB.FlatStyle = FlatStyle.Flat;
+            btnAnuladoTimeB.ForeColor = SystemColors.ActiveCaptionText;
             btnAnuladoTimeB.Location = new Point(547, 368);
             btnAnuladoTimeB.Name = "btnAnuladoTimeB";
             btnAnuladoTimeB.Size = new Size(75, 35);
             btnAnuladoTimeB.TabIndex = 6;
             btnAnuladoTimeB.Text = "ANULADO";
-            btnAnuladoTimeB.UseVisualStyleBackColor = true;
+            btnAnuladoTimeB.UseVisualStyleBackColor = false;
             btnAnuladoTimeB.Click += btnAnuladoTimeB_Click;
             // 
             // lblTimeA
             // 
-            lblTimeA.Anchor = AnchorStyles.Bottom;
+            lblTimeA.Anchor = AnchorStyles.None;
+            lblTimeA.BackColor = Color.Transparent;
+            lblTimeA.FlatStyle = FlatStyle.Flat;
             lblTimeA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTimeA.ForeColor = SystemColors.ActiveCaptionText;
             lblTimeA.Location = new Point(104, 321);
             lblTimeA.Name = "lblTimeA";
             lblTimeA.Size = new Size(19, 21);
             lblTimeA.TabIndex = 7;
             lblTimeA.Text = "0";
+            lblTimeA.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblTimeB
             // 
             lblTimeB.Anchor = AnchorStyles.Bottom;
+            lblTimeB.BackColor = Color.Transparent;
             lblTimeB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTimeB.ForeColor = SystemColors.ActiveCaptionText;
             lblTimeB.Location = new Point(518, 321);
             lblTimeB.Name = "lblTimeB";
             lblTimeB.Size = new Size(19, 21);
@@ -158,7 +174,9 @@
             // lblNomeTimaA
             // 
             lblNomeTimaA.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            lblNomeTimaA.BackColor = Color.Transparent;
             lblNomeTimaA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNomeTimaA.ForeColor = SystemColors.ActiveCaptionText;
             lblNomeTimaA.Location = new Point(36, 265);
             lblNomeTimaA.Name = "lblNomeTimaA";
             lblNomeTimaA.Size = new Size(154, 21);
@@ -169,7 +187,9 @@
             // lblNomeTimaB
             // 
             lblNomeTimaB.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            lblNomeTimaB.BackColor = Color.Transparent;
             lblNomeTimaB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNomeTimaB.ForeColor = SystemColors.ActiveCaptionText;
             lblNomeTimaB.Location = new Point(469, 265);
             lblNomeTimaB.Name = "lblNomeTimaB";
             lblNomeTimaB.RightToLeft = RightToLeft.No;
@@ -187,7 +207,9 @@
             // 
             lblTempo.Anchor = AnchorStyles.None;
             lblTempo.AutoSize = true;
+            lblTempo.BackColor = Color.Transparent;
             lblTempo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTempo.ForeColor = SystemColors.ActiveCaptionText;
             lblTempo.Location = new Point(285, 193);
             lblTempo.Name = "lblTempo";
             lblTempo.Size = new Size(67, 19);
@@ -197,23 +219,25 @@
             // btnComecar
             // 
             btnComecar.Anchor = AnchorStyles.None;
+            btnComecar.BackColor = Color.Transparent;
             btnComecar.FlatStyle = FlatStyle.Flat;
             btnComecar.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnComecar.ForeColor = SystemColors.ActiveCaptionText;
             btnComecar.Location = new Point(250, 249);
             btnComecar.Name = "btnComecar";
             btnComecar.Size = new Size(142, 54);
             btnComecar.TabIndex = 13;
             btnComecar.Text = "Começar Jogo";
-            btnComecar.UseVisualStyleBackColor = true;
+            btnComecar.UseVisualStyleBackColor = false;
             btnComecar.Click += btnComecar_Click;
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoScroll = true;
-            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(lblTimeA);
             panel1.Controls.Add(lblTimeB);
+            panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(634, 461);
@@ -222,7 +246,6 @@
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(634, 461);
@@ -234,7 +257,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
+            BackColor = SystemColors.HighlightText;
             ClientSize = new Size(634, 461);
             Controls.Add(btnComecar);
             Controls.Add(lblTempo);
@@ -248,6 +271,7 @@
             Controls.Add(pcbTimeA);
             Controls.Add(pcbTimeB);
             Controls.Add(panel1);
+            ForeColor = Color.White;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(650, 500);
             Name = "Main_menu";
