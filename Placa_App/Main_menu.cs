@@ -58,7 +58,7 @@ namespace Placa_App
             }
 
         }
-        int min = 0; int seg = 0;
+        int min = 15; int seg = 55;
         private void cronometro_Tick(object sender, EventArgs e)
         {
             seg++;
@@ -93,7 +93,7 @@ namespace Placa_App
                 if (min == 8)
                     btnComecar.Text = "Começar 2º Tempo";
                 else if (min == 16)
-                    btnComecar.Text = "Recomeçar o Jogo";
+                    btnComecar.Text = "Começar Novo Jogo";
             }
         }
 
