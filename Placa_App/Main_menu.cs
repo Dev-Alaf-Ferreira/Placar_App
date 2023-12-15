@@ -21,7 +21,7 @@ namespace Placa_App
                 pcbTime.Image = Properties.Resources.Licitacoes;
             else if (text.Equals("Rancho"))
                 pcbTime.Image = Properties.Resources.Rancho;
-            else if (text.Equals("Sergenteacao"))
+            else if (text.Equals("Sargenteacao"))
                 pcbTime.Image = Properties.Resources.Sargenteacao;
             else if (text.Equals("Manutencao"))
                 pcbTime.Image = Properties.Resources.Manutencao;
@@ -76,7 +76,7 @@ namespace Placa_App
             }
 
         }
-        int min = 15; int seg = 55;
+        int min = 0; int seg = 0;
         private void cronometro_Tick(object sender, EventArgs e)
         {
             seg++;
