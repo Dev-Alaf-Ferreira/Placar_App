@@ -19,10 +19,10 @@ namespace Placa_App
                 pcbTime.Image = Properties.Resources.Licitacoes;
             else if (text.Equals("Rancho"))
                 pcbTime.Image = Properties.Resources.Rancho;
-            else if (text.Equals("Sergenteacão_FC"))
+            else if (text.Equals("Sergenteacão"))
                 pcbTime.Image = Properties.Resources.Sergenteacao;
-            else if (text.Equals("Sub_Tenência"))
-                pcbTime.Image = Properties.Resources.Sub_Tenencia;
+            else if (text.Equals("Manutenção"))
+                pcbTime.Image = Properties.Resources.Manutencao;
 
         }
 
@@ -135,6 +135,11 @@ namespace Placa_App
         private void btnPausar_Click(object sender, EventArgs e)
         {
             cronometro.Enabled = false;
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

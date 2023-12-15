@@ -46,10 +46,14 @@
             btnComecar = new Button();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
+            mnstrip_Menu = new MenuStrip();
+            menuToolStripMenuItem = new ToolStripMenuItem();
+            sairToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            mnstrip_Menu.SuspendLayout();
             SuspendLayout();
             // 
             // pcbTimeB
@@ -161,7 +165,7 @@
             // 
             // lblTimeB
             // 
-            lblTimeB.Anchor = AnchorStyles.Bottom;
+            lblTimeB.Anchor = AnchorStyles.None;
             lblTimeB.BackColor = Color.Transparent;
             lblTimeB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblTimeB.ForeColor = SystemColors.ActiveCaptionText;
@@ -173,7 +177,7 @@
             // 
             // lblNomeTimaA
             // 
-            lblNomeTimaA.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            lblNomeTimaA.Anchor = AnchorStyles.None;
             lblNomeTimaA.BackColor = Color.Transparent;
             lblNomeTimaA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNomeTimaA.ForeColor = SystemColors.ActiveCaptionText;
@@ -181,12 +185,12 @@
             lblNomeTimaA.Name = "lblNomeTimaA";
             lblNomeTimaA.Size = new Size(154, 21);
             lblNomeTimaA.TabIndex = 9;
-            lblNomeTimaA.Text = "Comando e Controle";
+            lblNomeTimaA.Text = "Rancho";
             lblNomeTimaA.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblNomeTimaB
             // 
-            lblNomeTimaB.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            lblNomeTimaB.Anchor = AnchorStyles.None;
             lblNomeTimaB.BackColor = Color.Transparent;
             lblNomeTimaB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNomeTimaB.ForeColor = SystemColors.ActiveCaptionText;
@@ -195,7 +199,7 @@
             lblNomeTimaB.RightToLeft = RightToLeft.No;
             lblNomeTimaB.Size = new Size(120, 21);
             lblNomeTimaB.TabIndex = 10;
-            lblNomeTimaB.Text = "Grupo de Apoio";
+            lblNomeTimaB.Text = "Manutenção";
             lblNomeTimaB.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // cronometro
@@ -253,12 +257,36 @@
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
+            // mnstrip_Menu
+            // 
+            mnstrip_Menu.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem });
+            mnstrip_Menu.Location = new Point(0, 0);
+            mnstrip_Menu.Name = "mnstrip_Menu";
+            mnstrip_Menu.Size = new Size(634, 24);
+            mnstrip_Menu.TabIndex = 15;
+            mnstrip_Menu.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            menuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sairToolStripMenuItem });
+            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            menuToolStripMenuItem.Size = new Size(50, 20);
+            menuToolStripMenuItem.Text = "Menu";
+            // 
+            // sairToolStripMenuItem
+            // 
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(93, 22);
+            sairToolStripMenuItem.Text = "Sair";
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
+            // 
             // Main_menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HighlightText;
             ClientSize = new Size(634, 461);
+            Controls.Add(mnstrip_Menu);
             Controls.Add(btnComecar);
             Controls.Add(lblTempo);
             Controls.Add(lblNomeTimaB);
@@ -273,6 +301,7 @@
             Controls.Add(panel1);
             ForeColor = Color.White;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = mnstrip_Menu;
             MinimumSize = new Size(650, 500);
             Name = "Main_menu";
             Opacity = 0.9D;
@@ -282,6 +311,8 @@
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            mnstrip_Menu.ResumeLayout(false);
+            mnstrip_Menu.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -304,5 +335,8 @@
         private Button btnComecar;
         private Panel panel1;
         private PictureBox pictureBox1;
+        private MenuStrip mnstrip_Menu;
+        private ToolStripMenuItem menuToolStripMenuItem;
+        private ToolStripMenuItem sairToolStripMenuItem;
     }
 }

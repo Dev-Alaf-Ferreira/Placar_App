@@ -93,6 +93,16 @@ namespace Placa_App.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Manutencao {
+            get {
+                object obj = ResourceManager.GetObject("Manutencao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rancho {
             get {
                 object obj = ResourceManager.GetObject("Rancho", resourceCulture);
@@ -106,16 +116,6 @@ namespace Placa_App.Properties {
         internal static System.Drawing.Bitmap Sergenteacao {
             get {
                 object obj = ResourceManager.GetObject("Sergenteacao", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sub_Tenencia {
-            get {
-                object obj = ResourceManager.GetObject("Sub_Tenencia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
