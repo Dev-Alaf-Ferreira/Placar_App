@@ -212,9 +212,9 @@
             lblTempo.ForeColor = SystemColors.ActiveCaptionText;
             lblTempo.Location = new Point(279, 193);
             lblTempo.Name = "lblTempo";
-            lblTempo.Size = new Size(67, 19);
+            lblTempo.Size = new Size(68, 19);
             lblTempo.TabIndex = 12;
-            lblTempo.Text = "1 TEMPO";
+            lblTempo.Text = "1º Tempo";
             // 
             // btnComecar
             // 
@@ -253,7 +253,7 @@
             cmbTimeB.Anchor = AnchorStyles.None;
             cmbTimeB.FlatStyle = FlatStyle.Flat;
             cmbTimeB.FormattingEnabled = true;
-            cmbTimeB.Items.AddRange(new object[] { "Grupo de Apoio", "Comando e Controle", "Sargenteacao", "Licitacoes", "Manutencao", "Rancho" });
+            cmbTimeB.Items.AddRange(new object[] { "Grupo de Apoio", "Comando e Controle", "Sargenteação", "Licitações", "Manutenção", "Rancho" });
             cmbTimeB.Location = new Point(422, 249);
             cmbTimeB.Name = "cmbTimeB";
             cmbTimeB.Size = new Size(200, 23);
@@ -265,7 +265,7 @@
             cmbTimeA.Anchor = AnchorStyles.None;
             cmbTimeA.FlatStyle = FlatStyle.Flat;
             cmbTimeA.FormattingEnabled = true;
-            cmbTimeA.Items.AddRange(new object[] { "Grupo de Apoio", "Comando e Controle", "Sargenteacao", "Licitacoes", "Manutencao", "Rancho" });
+            cmbTimeA.Items.AddRange(new object[] { "Grupo de Apoio", "Comando e Controle", "Sargenteação", "Licitações", "Manutenção", "Rancho" });
             cmbTimeA.Location = new Point(12, 249);
             cmbTimeA.Name = "cmbTimeA";
             cmbTimeA.Size = new Size(200, 23);

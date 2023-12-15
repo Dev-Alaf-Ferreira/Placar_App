@@ -17,13 +17,13 @@ namespace Placa_App
                 pcbTime.Image = Properties.Resources.ComandoControle;
             else if (text.Equals("Grupo de Apoio"))
                 pcbTime.Image = Properties.Resources.Grupo_de_Apoio;
-            else if (text.Equals("Licitacoes"))
+            else if (text.Equals("Licitações"))
                 pcbTime.Image = Properties.Resources.Licitacoes;
             else if (text.Equals("Rancho"))
                 pcbTime.Image = Properties.Resources.Rancho;
-            else if (text.Equals("Sargenteacao"))
+            else if (text.Equals("Sargenteação"))
                 pcbTime.Image = Properties.Resources.Sargenteacao;
-            else if (text.Equals("Manutencao"))
+            else if (text.Equals("Manutenção"))
                 pcbTime.Image = Properties.Resources.Manutencao;
         }
 
