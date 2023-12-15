@@ -113,9 +113,9 @@ namespace Placa_App.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sergenteacao {
+        internal static System.Drawing.Bitmap Sargenteacao {
             get {
-                object obj = ResourceManager.GetObject("Sergenteacao", resourceCulture);
+                object obj = ResourceManager.GetObject("Sargenteacao", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

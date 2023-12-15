@@ -5,11 +5,29 @@ namespace Placa_App
         public Main_menu()
         {
             InitializeComponent();
-            CarregarImagem(pcbTimeA, lblNomeTimaA.Text);
-            CarregarImagem(pcbTimeB, lblNomeTimaB.Text);
+            //CarregarImagem(pcbTimeA, lblNomeTimaA.Text);
+            // CarregarImagem(pcbTimeB, lblNomeTimaB.Text);
+            CarregarImagemCmbBox(pcbTimeA, cmbTimeA.Text);
+            CarregarImagemCmbBox(pcbTimeB, cmbTimeB.Text);
         }
 
-        private void CarregarImagem(PictureBox pcbTime, string text)
+        private void CarregarImagemCmbBox(PictureBox pcbTime, string text)
+        {
+            if (text.Equals("Comando e Controle"))
+                pcbTime.Image = Properties.Resources.ComandoControle;
+            else if (text.Equals("Grupo de Apoio"))
+                pcbTime.Image = Properties.Resources.Grupo_de_Apoio;
+            else if (text.Equals("Licitacoes"))
+                pcbTime.Image = Properties.Resources.Licitacoes;
+            else if (text.Equals("Rancho"))
+                pcbTime.Image = Properties.Resources.Rancho;
+            else if (text.Equals("Sergenteacao"))
+                pcbTime.Image = Properties.Resources.Sargenteacao;
+            else if (text.Equals("Manutencao"))
+                pcbTime.Image = Properties.Resources.Manutencao;
+        }
+
+        /*private void CarregarImagem(PictureBox pcbTime, string text)
         {
             if (text.Equals("Comando e Controle"))
                 pcbTime.Image = Properties.Resources.ComandoControle;
@@ -24,7 +42,7 @@ namespace Placa_App
             else if (text.Equals("Manutenção"))
                 pcbTime.Image = Properties.Resources.Manutencao;
 
-        }
+        }*/
 
         private void btnGolTimeA_Click(object sender, EventArgs e)
         {
@@ -99,7 +117,11 @@ namespace Placa_App
 
         private void btnComecar_Click(object sender, EventArgs e)
         {
-            if (min == 16)
+            if (cmbTimeA.Text == cmbTimeB.Text)
+            {
+                MessageBox.Show("Error!!! O Time não pode ser o mesmo.");
+            }
+            else if (min == 16)
             {
                 min = 0;
                 seg = 0;
@@ -108,9 +130,13 @@ namespace Placa_App
                 lblTimeA.Text = "0";
                 lblTimeB.Text = "0";
                 lblTempo.Text = "1º Tempo";
+                cmbTimeA.Enabled = true;
+                cmbTimeB.Enabled = true;
             }
             else
             {
+                cmbTimeA.Enabled = false;
+                cmbTimeB.Enabled = false;
                 cronometro.Enabled = true;
                 btnComecar.Visible = false;
                 AtivarBotoes();
@@ -137,9 +163,14 @@ namespace Placa_App
             cronometro.Enabled = false;
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cmbTimeB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Application.Exit();
+            CarregarImagemCmbBox(pcbTimeB, cmbTimeB.Text);
+        }
+
+        private void cmb_TimeA_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CarregarImagemCmbBox(pcbTimeA, cmbTimeA.Text);
         }
     }
 }

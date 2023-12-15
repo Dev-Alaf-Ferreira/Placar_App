@@ -45,23 +45,21 @@
             lblTempo = new Label();
             btnComecar = new Button();
             panel1 = new Panel();
+            cmbTimeB = new ComboBox();
+            cmbTimeA = new ComboBox();
             pictureBox1 = new PictureBox();
-            mnstrip_Menu = new MenuStrip();
-            menuToolStripMenuItem = new ToolStripMenuItem();
-            sairToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            mnstrip_Menu.SuspendLayout();
             SuspendLayout();
             // 
             // pcbTimeB
             // 
             pcbTimeB.Anchor = AnchorStyles.None;
-            pcbTimeB.Location = new Point(422, 81);
+            pcbTimeB.Location = new Point(398, 55);
             pcbTimeB.Name = "pcbTimeB";
-            pcbTimeB.Size = new Size(200, 150);
+            pcbTimeB.Size = new Size(224, 176);
             pcbTimeB.SizeMode = PictureBoxSizeMode.Zoom;
             pcbTimeB.TabIndex = 0;
             pcbTimeB.TabStop = false;
@@ -69,9 +67,9 @@
             // pcbTimeA
             // 
             pcbTimeA.Anchor = AnchorStyles.None;
-            pcbTimeA.Location = new Point(12, 81);
+            pcbTimeA.Location = new Point(12, 55);
             pcbTimeA.Name = "pcbTimeA";
-            pcbTimeA.Size = new Size(200, 150);
+            pcbTimeA.Size = new Size(232, 176);
             pcbTimeA.SizeMode = PictureBoxSizeMode.Zoom;
             pcbTimeA.TabIndex = 1;
             pcbTimeA.TabStop = false;
@@ -181,11 +179,10 @@
             lblNomeTimaA.BackColor = Color.Transparent;
             lblNomeTimaA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNomeTimaA.ForeColor = SystemColors.ActiveCaptionText;
-            lblNomeTimaA.Location = new Point(36, 265);
+            lblNomeTimaA.Location = new Point(36, 282);
             lblNomeTimaA.Name = "lblNomeTimaA";
             lblNomeTimaA.Size = new Size(154, 21);
             lblNomeTimaA.TabIndex = 9;
-            lblNomeTimaA.Text = "Rancho";
             lblNomeTimaA.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblNomeTimaB
@@ -194,12 +191,11 @@
             lblNomeTimaB.BackColor = Color.Transparent;
             lblNomeTimaB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNomeTimaB.ForeColor = SystemColors.ActiveCaptionText;
-            lblNomeTimaB.Location = new Point(469, 265);
+            lblNomeTimaB.Location = new Point(474, 282);
             lblNomeTimaB.Name = "lblNomeTimaB";
             lblNomeTimaB.RightToLeft = RightToLeft.No;
             lblNomeTimaB.Size = new Size(120, 21);
             lblNomeTimaB.TabIndex = 10;
-            lblNomeTimaB.Text = "Manutenção";
             lblNomeTimaB.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // cronometro
@@ -214,7 +210,7 @@
             lblTempo.BackColor = Color.Transparent;
             lblTempo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblTempo.ForeColor = SystemColors.ActiveCaptionText;
-            lblTempo.Location = new Point(285, 193);
+            lblTempo.Location = new Point(279, 193);
             lblTempo.Name = "lblTempo";
             lblTempo.Size = new Size(67, 19);
             lblTempo.TabIndex = 12;
@@ -239,6 +235,11 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoScroll = true;
+            panel1.Controls.Add(cmbTimeB);
+            panel1.Controls.Add(lblNomeTimaA);
+            panel1.Controls.Add(lblNomeTimaB);
+            panel1.Controls.Add(lblTempo);
+            panel1.Controls.Add(cmbTimeA);
             panel1.Controls.Add(lblTimeA);
             panel1.Controls.Add(lblTimeB);
             panel1.Controls.Add(pictureBox1);
@@ -246,6 +247,30 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(634, 461);
             panel1.TabIndex = 14;
+            // 
+            // cmbTimeB
+            // 
+            cmbTimeB.Anchor = AnchorStyles.None;
+            cmbTimeB.FlatStyle = FlatStyle.Flat;
+            cmbTimeB.FormattingEnabled = true;
+            cmbTimeB.Items.AddRange(new object[] { "Grupo de Apoio", "Comando e Controle", "Sargenteacao", "Licitacoes", "Manutencao", "Rancho" });
+            cmbTimeB.Location = new Point(422, 249);
+            cmbTimeB.Name = "cmbTimeB";
+            cmbTimeB.Size = new Size(200, 23);
+            cmbTimeB.TabIndex = 17;
+            cmbTimeB.SelectedIndexChanged += cmbTimeB_SelectedIndexChanged;
+            // 
+            // cmbTimeA
+            // 
+            cmbTimeA.Anchor = AnchorStyles.None;
+            cmbTimeA.FlatStyle = FlatStyle.Flat;
+            cmbTimeA.FormattingEnabled = true;
+            cmbTimeA.Items.AddRange(new object[] { "Grupo de Apoio", "Comando e Controle", "Sargenteacao", "Licitacoes", "Manutencao", "Rancho" });
+            cmbTimeA.Location = new Point(12, 249);
+            cmbTimeA.Name = "cmbTimeA";
+            cmbTimeA.Size = new Size(200, 23);
+            cmbTimeA.TabIndex = 16;
+            cmbTimeA.SelectedIndexChanged += cmb_TimeA_SelectedIndexChanged;
             // 
             // pictureBox1
             // 
@@ -257,40 +282,13 @@
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
-            // mnstrip_Menu
-            // 
-            mnstrip_Menu.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem });
-            mnstrip_Menu.Location = new Point(0, 0);
-            mnstrip_Menu.Name = "mnstrip_Menu";
-            mnstrip_Menu.Size = new Size(634, 24);
-            mnstrip_Menu.TabIndex = 15;
-            mnstrip_Menu.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sairToolStripMenuItem });
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(50, 20);
-            menuToolStripMenuItem.Text = "Menu";
-            // 
-            // sairToolStripMenuItem
-            // 
-            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(93, 22);
-            sairToolStripMenuItem.Text = "Sair";
-            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
-            // 
             // Main_menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HighlightText;
             ClientSize = new Size(634, 461);
-            Controls.Add(mnstrip_Menu);
             Controls.Add(btnComecar);
-            Controls.Add(lblTempo);
-            Controls.Add(lblNomeTimaB);
-            Controls.Add(lblNomeTimaA);
             Controls.Add(btnAnuladoTimeB);
             Controls.Add(btnGolTimeB);
             Controls.Add(btnAnuladoTimeA);
@@ -301,7 +299,6 @@
             Controls.Add(panel1);
             ForeColor = Color.White;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MainMenuStrip = mnstrip_Menu;
             MinimumSize = new Size(650, 500);
             Name = "Main_menu";
             Opacity = 0.9D;
@@ -310,11 +307,9 @@
             ((System.ComponentModel.ISupportInitialize)pcbTimeB).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcbTimeA).EndInit();
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            mnstrip_Menu.ResumeLayout(false);
-            mnstrip_Menu.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -335,8 +330,7 @@
         private Button btnComecar;
         private Panel panel1;
         private PictureBox pictureBox1;
-        private MenuStrip mnstrip_Menu;
-        private ToolStripMenuItem menuToolStripMenuItem;
-        private ToolStripMenuItem sairToolStripMenuItem;
+        private ComboBox cmbTimeA;
+        private ComboBox cmbTimeB;
     }
 }
