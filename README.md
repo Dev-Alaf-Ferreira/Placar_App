@@ -2,8 +2,9 @@
 Sistema de Placa para jogos de futebol.
 
 ## 📋Pré-requisitos
-.NET CORE: Exige privilégios de administrador para ser instalado.
-SO: Windows 7 ou superior;
+- .NET CORE: Exige privilégios de administrador para ser instalado.
+- SO: Windows 7 ou superior.
+
 ## ⚙️Instalação.
 
 ## ⚙️Executando os teste.
