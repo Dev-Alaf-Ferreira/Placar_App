@@ -7,12 +7,6 @@ Sistema de Placa para jogos de futebol.
 
 ## ⚙️Instalação.
 
-## ⚙️Executando os teste.
-
-## 🔩Analise os testes de ponta a ponta.
-
-## ⌨️E testes de estilo de codificação.
-
 ## 📦Implantação
 O Sistema foi implantado em um campeonato na empresa.
 
