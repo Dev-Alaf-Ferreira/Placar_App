@@ -26,24 +26,6 @@ namespace Placa_App
             else if (text.Equals("Manutenção"))
                 pcbTime.Image = Properties.Resources.Manutencao;
         }
-
-        /*private void CarregarImagem(PictureBox pcbTime, string text)
-        {
-            if (text.Equals("Comando e Controle"))
-                pcbTime.Image = Properties.Resources.ComandoControle;
-            else if (text.Equals("Grupo de Apoio"))
-                pcbTime.Image = Properties.Resources.Grupo_de_Apoio;
-            else if (text.Equals("Licitacões"))
-                pcbTime.Image = Properties.Resources.Licitacoes;
-            else if (text.Equals("Rancho"))
-                pcbTime.Image = Properties.Resources.Rancho;
-            else if (text.Equals("Sergenteacão"))
-                pcbTime.Image = Properties.Resources.Sergenteacao;
-            else if (text.Equals("Manutenção"))
-                pcbTime.Image = Properties.Resources.Manutencao;
-
-        }*/
-
         private void btnGolTimeA_Click(object sender, EventArgs e)
         {
             int resultado = int.Parse(lblTimeA.Text) + 1;
@@ -91,7 +73,7 @@ namespace Placa_App
             else
                 texto += min;
 
-            if (seg < 8)
+            if (seg < 10)
                 texto += ":0" + seg;
             else
                 texto += ":" + seg;
@@ -119,7 +101,7 @@ namespace Placa_App
         {
             if (cmbTimeA.Text == cmbTimeB.Text)
             {
-                MessageBox.Show("Error!!! O Time não pode ser o mesmo.");
+                MessageBox.Show("O Time não pode ser o mesmo.");
             }
             else if (min == 16)
             {
