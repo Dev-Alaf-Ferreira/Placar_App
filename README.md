@@ -9,7 +9,7 @@ Sistema de Placa para jogos de futebol.
 
 
 ## 📦Implantação
-- O Sistema foi implantado em um campeonato na empresa.
+- O Sistema foi utilizado no campeonato de futebol na empresa.
 
 ## 🛠️Construído com a IDE Visual Studio Community 2019
 - windows Forms - .NETCoreApp v6.0. 
